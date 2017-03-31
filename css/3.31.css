@@ -1,0 +1,19 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.header{
+	width: 1200px;
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+.main{
+	width: 1200px;
+	height: 800px;
+	margin: auto;
+}
+.tet{
+	text-indent: 2em;
+}

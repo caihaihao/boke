@@ -31,24 +31,43 @@ a{
 	margin:auto;
 }
 .main_left{
-	width: 750px;
+	width: 800px;
 	margin-top: 20px;
 	float: left;
 }
 .main_right{
-	width: 350px;
-    height: 250px;
+	width: 380px;
     float: right;
-    background-color: mediumslateblue;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 20px;
 }
+.main_left_one,.main_left_two,.main_left_three{
+	width: 800px;
+	height: 250px;
+	background-color: mediumslateblue;
+	margin-top:20px;
+}
+.main_left_two{
+	
+}
+.main_left_one{
 
+}
+.main_right_one,.main_right_two,.main_right_three,.main_right_four{
+	width: 380px; 
+    background-color: mediumslateblue;
+    height: 250px;
 
-
-
-
-
+}
+.main_right_two{
+    margin-top:20px;
+}
+.main_right_three{
+    margin-top:20px;
+}
+.main_right_four{
+	margin-top:20px;
+}
 
 
 
