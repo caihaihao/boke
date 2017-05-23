@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body {
+				padding：0;
+				margin: 0;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.header {
+				width: 100%;
+				height: 185px;
+				background:url(img/3.jpg)repeat-x;
+			}
+			
+			.mian {
+				width: 100%;
+				background: #D8E3FA;
+				margin-top: -21px;
+			}
+			
+			.mian_top {
+				width: 1200px;
+				margin: auto;
+			}
+			
+			.mian_top h1 {
+				margin-left: 51px;
+				color: #4169E1;
+			}
+			
+			.mian_center {
+				width: 1200px;
+				margin: auto;
+			}
+			
+			.mian_center h2 {
+				margin-left: 53px;
+				color: #4169E1;
+			}
+			
+			.word1 {
+				margin-left: 55px;
+				line-height: 45px;
+				color: #6262F2;
+			}
+			
+			.mian_bottom {
+				width: 1200px;
+				margin: auto;
+				background: url(../img/sdfsd.jpg) no-repeat;
+				background-size: cover;
+			}
+			
+			.mian_bottom h2 {
+				margin-left: 53px;
+				color: #4169E1;
+			}
+			
+			.word2 {
+				margin-left: 55px;
+				line-height: 45px;
+				color: #6262F2;
+			}
+			
+			.bottom {
+				width: 100%;
+				height: 150px;
+				background: url(img/3.jpg) repeat-x;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			
+		</div>
+		<div class="mian">
+			<div class="mian_top">
+				<h1>中级笔试汇总:</h1>
+			</div>
+			<div class="mian_center">
+				<h2>一:</h2>
+				<div class="word1">
+					<ul>
+			<li>用原生Js怎样添加、删除、插入、替换dom节点.
+			答：var ele = document.getElementById("my_div");添加<br />
+				appendchild;插入<br />
+				removeChild;删除<br />
+				replaceChild;替换<br />
+			</li>
+			<li>列举浏览器对象模型BOM里常用的至少3个对象，并列举window对象的常用方法至少3个。
+				答：window，navigator，location。<br />
+					alert(),document,window.open.
+			</li>
+			<li>请用jQuery实现如下效果：ul里的5个li，点击谁，谁就加个下边框2px宽的红色的虚线的样式，其他的li没有此样式？
+				答：$(function(){
+
+			   		 $("li").click(function() {
+			
+			        $(this).siblings('li').removeClass('selected');    // 删除其他li的边框样式
+			
+			        $(this).addClass('selected');                            // 为当前li添加边框样式
+			
+			    });
+			
+			}); 
+			</li>
+			<li>Html5的新特性有哪些？
+				答：用于绘画的 canvas 元素 <br />
+					用于媒介回放的 video 和 audio 元素 <br />
+					对本地离线存储的更好的支持 <br />
+					新的特殊内容元素，比如 article、footer、header、nav、section <br />
+					新的表单控件，比如 calendar、date、time、email、url、search 
+
+			</li>
+			<li>css3的新特性有哪些？
+				答：CSS3 选择器（Selector）<br />
+					@Font-face 特性、<br />
+					Word-wrap & Text-overflow 样式<br />
+					Text-decoration<br />
+					多列布局（multi-column layout）<br /><br />
+					边框和颜色，颜色支持透明度（color, border）
+					渐变效果（Gradient）<br />
+					阴影（Shadow）和反射（Reflect）效果<br />
+					盒子模型<br />
+					Transitions, Transforms 和 Animation
+			</li>
+			<li>请说出AJax的核心，指出他的优缺点至少各2条？
+				答：    Ajax的核心技术是XMLHttpRequest，它是JavaScript中的一个对象。<br />
+					1、最大的一点是页面无刷新，用户的体验非常好。<br />
+					2、使用异步方式与服务器通信，具有更加迅速的响应能力。<br />
+					3、可以把以前一些服务器负担的工作转嫁到客户端，利用客户端闲置的能力来处理，减轻服务器和带宽的负担，节约空间和宽带租用成本。并且减轻服务器的负担，ajax的原则是“按需取数据”，可以最大程度的减少冗余请求，和响应对服务器造成的负担。<br />
+					4、基于标准化的并被广泛支持的技术，不需要下载插件或者小程序。<br />
+					ajax的缺点<br />
+					1、ajax不支持浏览器back按钮。<br />
+					2、安全问题 AJAX暴露了与服务器交互的细节。<br />
+					3、对搜索引擎的支持比较弱。<br />
+					4、破坏了程序的异常机制。<br />
+					5、不容易调试。
+			</li>
+			<li>表单提交中GET和POST方式的区别。
+				答：表单提交中get和post方式的区别有5点 <br />
+					1.get是从服务器上获取数据，post是向服务器传送数据。 <br />
+					2.get是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。post是通过HTTPpost机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。 <br />
+					3.对于get方式，服务器端用Request.QueryString获取变量的值，对于post方式，服务器端用Request.Form获取提交的数据。<br /> 
+					4.get传送的数据量较小，不能大于2KB。post传送的数据量较大，一般被默认为不受限制。但理论上，IIS4中最大量为80KB，IIS5中为100KB。 <br />
+					5.get安全性非常低，post安全性较高。
+			</li>
+			<li>什么是跨域？如何解决跨域问题？
+				答：跨域，指的是浏览器不能执行其他网站的脚本。它是由浏览器的同源策略造成的，是浏览器对JavaScript施加的安全限制。<br />
+					解决办法：<br />
+
+					1、JSONP：<br />
+					
+					使用方式就不赘述了，但是要注意JSONP只支持GET请求，不支持POST请求。<br />
+					
+					2、代理：
+					<br />
+					例如www.123.com/index.html需要调用www.456.com/server.php，可以写一个接口www.123.com/server.php，由这个接口在后端去调用www.456.com/server.php并拿到返回值，然后再返回给index.html，这就是一个代理的模式。相当于绕过了浏览器端，自然就不存在跨域问题。<br />
+					
+					3、PHP端修改header（XHR2方式）<br />
+					
+					在php接口脚本中加入以下两句即可：<br />
+					header('Access-Control-Allow-Origin:*');//允许所有来源访问<br />
+					header('Access-Control-Allow-Method:POST,GET');//允许访问的方式
+			</li>
+			<li>请你描述一下cookies，sessionStorage和localStorage的区别？
+				答：共同点：都是保存在浏览器端，且同源的。
+					区别：cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。Web Storage 支持事件通知机制，可以将数据更新的通知发送给监听者。Web Storage 的 api 接口使用更方便。
+			</li>
+			<li>编程题：实现一个打点计时器，要求1.从start到end（包含start和end）,每隔100毫秒console.log一个数字，每次数字增幅为1
+				2.返回的对象需要包含一个cancel方法，用于停止定时器操作
+				3.第一个数需要立即输出
+				答：<br />
+					function count(start, end) {  <br />
+				    console.log(start)  <br />
+				    var timer = setInterval(  <br />
+				        function(){  <br />
+				            if(start<end){  <br />
+				            	console.log(start+=1); <br />
+				            }<br />
+				           
+				        },100)  <br />
+				    return {cancel:function(){clearInterval(timer)}<br />
+				    }  <br />
+				  
+				}  <br />
+				console.log(count(1,100));
+			</li>
+		</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+
+		</div>
+
+	</body>
+
+</html>

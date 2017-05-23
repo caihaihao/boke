@@ -1,0 +1,20 @@
+[0522/184049:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0522/184059:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/184104:ERROR:renderer_main.cc(227)] Running without renderer sandbox
+[0522/184405:INFO:CONSOLE(115)] "10", source: http://127.0.0.1:8020/5.19javaScript%e5%88%9d%e5%ad%a6/index.html (115)
+[0522/184527:INFO:CONSOLE(115)] "10", source: http://127.0.0.1:8020/5.19javaScript%e5%88%9d%e5%ad%a6/index.html (115)
+[0522/184555:INFO:CONSOLE(471)] "0", source: http://127.0.0.1:8020/%e4%b8%ad%e7%ba%a7%e8%80%83%e6%a0%b8/index.html (471)
+[0522/184556:INFO:CONSOLE(471)] "1", source: http://127.0.0.1:8020/%e4%b8%ad%e7%ba%a7%e8%80%83%e6%a0%b8/index.html (471)
+[0522/190631:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/190944:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/191121:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/193145:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/193332:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/194343:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/194516:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/195355:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/200218:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/200740:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/201417:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/201751:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0522/203243:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
